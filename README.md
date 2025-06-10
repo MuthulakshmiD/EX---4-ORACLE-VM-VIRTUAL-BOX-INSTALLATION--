@@ -1,46 +1,352 @@
-# Ex:5 ORACLE VM VIRTUAL BOX INSTALLATION
+# EX---4-ORACLE-VM-VIRTUAL-BOX-INSTALLATION--
 
 ## NAME : Muthulakshmi D
 ## REGNO : 212223040122
 
-## Introduction
-In this lab, we are going to be introduced to one of the famous Cloud Service providers, Amazon Web Services (AWS). We will work on Amazon Simple Storage Service (S3), which provides storage through web service interfaces (REST, SOAP, and BitTorrent). In S3, the data is stored in the form of buckets. Buckets serve as root folders where we can add, create, or upload files and folders. We can create multiple buckets for different purposes, and each bucket can have different access control policies.
+**Linux** is an open-source operating system, and its kernel is the heart of the OS, facilitating communication between hardware and software. One of the key advantages of Linux is its customizability; developers can modify the Linux kernel to create their own tailored operating systems.
 
-## Objectives
-Create a Bucket in Amazon S3.
-Add Objects (files and folders) to the bucket.
-Access, move, download, and delete the objects.
-Delete the Bucket.
+## Linux Commands
 
-### Step 1: Choose S3 Service
-Choose the S3 service from the list of services provided by AWS.
+Linux commands are executed in the terminal, which is case-sensitive. This guide covers some basic and advanced commands used in Linux.
 
-### Step 2: Create a Unique Bucket
-After selecting the S3 service, click on the "Create Bucket" button on the page. The bucket name must be unique, contain no uppercase letters, and have no special characters. If you enter any of these, an error will display, preventing the bucket from being created.
+### 1. `ls` Command
 
+The `ls` command is used to display a list of contents in a directory.
 
-For region selection, choose a region from the available list. It is recommended to select a region nearby your location for higher availability. In this lab, I selected Sydney, as it is near my country, New Zealand. Remember to provide a unique bucket name with no special characters or uppercase letters.
+**Syntax:** 
+```bash
+ls
+```
 
-### Step 3: Upload Files to the Bucket
-Now, I have uploaded some files into the bucket I just created. There are no restrictions on uploading file types, but the size of each file must be less than 5 terabytes.
+**Output:**
 
-You can upload files of any extension, folders, and subfolders. The images below explain that you can drag and drop files or select them from your computer. After uploading a file, you can download, cut, copy, make it public, rename, or delete it. Making a file public means everyone can access it, and you will receive a link (e.g., https://s3-ap-southeast-2.amazonaws.com/...) to share it.
+### 2. `pwd` Command
 
-### Step 4: Upload a Folder
-You can also upload a folder to the bucket. If your local folder contains subfolders and data, all data inside the parent folder will be uploaded. The images below show how to upload a folder by dragging and dropping or browsing.
+The `pwd` command displays the location of the current working directory.
 
-### Step 5: Delete the Bucket
-To delete a bucket, you must retype the bucket name. This policy is implemented by Amazon to confirm your action because deleting a bucket can remove large amounts of data.
+**Syntax:**
+```bash
+pwd
+```
 
-## Output:
-![image](https://github.com/user-attachments/assets/c6291ec2-d560-4d2d-b12a-b43eb389724a)
-![image](https://github.com/user-attachments/assets/7c28fb7b-6b2c-4d97-986c-fe3b2797a2f2)
-![image](https://github.com/user-attachments/assets/10ba6aa9-9c74-49dd-aedb-5468e3a6f8e5)
-![image](https://github.com/user-attachments/assets/79b05738-1be6-4fee-8ca8-31fb4813f791)
+**Output:**
 
-![image](https://github.com/user-attachments/assets/de26754d-24d0-4ce7-a027-72fe343e7375)
+### 3. `mkdir` Command
 
+The `mkdir` command is used to create a new directory.
 
+**Syntax:**
+```bash
+mkdir <directory_name>
+```
+
+**Output:**
+
+### 4. `rmdir` Command
+
+The `rmdir` command is used to delete a directory.
+
+**Syntax:**
+```bash
+rmdir <directory_name>
+```
+
+**Output:**
+
+### 5. `cd` Command
+
+The `cd` command is used to change the current directory.
+
+**Syntax:**
+```bash
+cd <directory_name>
+```
+
+**Output:**
+
+### 6. `cat` Command
+
+The `cat` command is used to create, display, and concatenate files.
+
+**Syntax:**
+```bash
+cat [OPTION]... [FILE]...
+```
+
+**Output:**
+
+### 7. `cp` Command
+
+The `cp` command is used to copy files or directories.
+
+**Syntax:**
+```bash
+cp <source_file> <destination_file>
+```
+
+**Output:**
+
+### 8. `gedit` Command
+
+`gedit` is a general-purpose text editor used to create and edit text files.
+
+**Syntax:**
+```bash
+gedit <file_name>
+```
+
+**Output:**
+
+### 9. `su` Command
+
+The `su` command provides administrative access to another user.
+
+**Syntax:**
+```bash
+su <username>
+```
+
+**Output:**
+
+### 10. `mv` Command
+
+The `mv` command is used to move a file or directory from one location to another.
+
+**Syntax:**
+```bash
+mv <file_name> <directory_path>
+```
+
+**Output:**
+
+### 11. `rename` Command
+
+The `rename` command is used to rename files.
+
+**Syntax:**
+```bash
+rename 's/old-name/new-name/' <files>
+```
+
+**Output:**
+
+### 12. `head` Command
+
+The `head` command displays the first 10 lines of a file.
+
+**Syntax:**
+```bash
+head <file_name>
+```
+
+**Output:**
+
+### 13. `tail` Command
+
+The `tail` command displays the last 10 lines of a file.
+
+**Syntax:**
+```bash
+tail <file_name>
+```
+
+**Output:**
+
+### 14. `id` Command
+
+The `id` command displays the user ID (UID) and group ID (GID).
+
+**Syntax:**
+```bash
+id
+```
+
+**Output:**
+
+### 15. `grep` Command
+
+The `grep` command is used to search for a pattern within files.
+
+**Syntax:**
+```bash
+command | grep <search_word>
+```
+
+**Output:**
+
+### 16. `tr` Command
+
+The `tr` command is used to translate or delete characters.
+
+**Syntax:**
+```bash
+command | tr <old> <new>
+```
+
+**Output:**
+
+### 17. `chmod` Command
+
+The `chmod` command is used to change the access mode (permissions) of a file.
+
+**Syntax:**
+```bash
+chmod <options> <permissions> <file_name>
+```
+
+**Output:**
+
+### 18. `tar` Command
+
+The `tar` command is used to create or extract archive files.
+
+**Syntax:**
+```bash
+tar [options] [archive-file] [files_to_archive]
+```
+
+**Output:**
+
+### 19. `chown` Command
+
+The `chown` command is used to change the ownership of a file.
+
+**Syntax:**
+```bash
+chown <owner_name> <file_name>
+```
+
+**Output:**
+
+### 20. `make` Command
+
+The `make` command is used to build and maintain groups of programs.
+
+**Syntax:**
+```bash
+make [-f makefile] [options] [targets]
+```
+
+**Output:**
+
+### 21. `ifconfig` Command
+
+The `ifconfig` command is used to configure network interfaces.
+
+**Syntax:**
+```bash
+ifconfig [options] [interface]
+```
+
+**Output:**
+
+### 22. `chmod 777` Command
+
+The `chmod 777` command gives read, write, and execute permissions to the owner, group, and others.
+
+**Syntax:**
+```bash
+chmod 777 <file_name>
+chmod -R 777 /path/to/file/or/folder
+```
+
+**Output:**
+
+### 23. `host` Command
+
+The `host` command is used to display the IP address for a given domain name.
+
+**Syntax:**
+```bash
+host <domain_name> or <ip_address>
+```
+
+**Output:**
+
+### 24. `gzip` Command
+
+The `gzip` command is used to compress files, replacing the original file with a compressed one with a `.gz` extension.
+
+**Syntax:**
+```bash
+gzip <file1> <file2> <file3>...
+```
+
+**Output:**
+
+### 25. `sort` Command
+
+The `sort` command is used to sort the contents of a file alphabetically.
+
+**Syntax:**
+```bash
+sort <file_name>
+```
+
+**Output:**
+
+### 26. `cal` Command
+
+The `cal` command displays the current month's calendar with the current date highlighted.
+
+**Syntax:**
+```bash
+cal
+```
+
+**Output:**
+
+### 27. `clear` Command
+
+The `clear` command clears the terminal screen.
+
+**Syntax:**
+```bash
+clear
+```
+
+**Output:**
+
+### 28. `mail` Command
+
+The `mail` command is used to send emails from the command line.
+
+**Syntax:**
+```bash
+mail
+```
+
+**Output:**
+
+### 29. `df` Command
+
+The `df` command displays the disk space usage of file systems.
+
+**Syntax:**
+```bash
+df
+```
+
+**Output:**
+
+### 30. `find` Command
+
+The `find` command is used to search for files in a directory hierarchy.
+
+**Syntax:**
+```bash
+find <directory> -name <file_name>
+```
+
+**Output:**
+
+Register number : 212222100058
+
+![image](https://github.com/user-attachments/assets/1f1be76d-8a8c-4eb2-a77e-53a0f4924a25)
+![image](https://github.com/user-attachments/assets/637ee69d-a4ff-4cf1-9f65-2d8095aed350)
+![WhatsApp Image 2025-02-26 at 13 59 24_1c603799](https://github.com/user-attachments/assets/bdb5a52e-f093-4767-9cb1-0c4ffc8fe11f)
+![WhatsApp Image 2025-02-26 at 13 59 32_6f105c88](https://github.com/user-attachments/assets/73eb14f7-96b1-4685-82de-234802e0831b)
 
 ## Result
-Successfully created, managed, and deleted an S3 bucket on AWS, demonstrating the ability to upload, access, and control objects within Amazon S3.
+Thus, the execution of various Linux commands is executed successfully using VMware workstation.
+
