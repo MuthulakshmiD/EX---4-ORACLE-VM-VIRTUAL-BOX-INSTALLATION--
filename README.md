@@ -3,55 +3,44 @@
 ## NAME : Muthulakshmi D
 ## REGNO : 212223040122
 
-## AIM:
+## Introduction
+In this lab, we are going to be introduced to one of the famous Cloud Service providers, Amazon Web Services (AWS). We will work on Amazon Simple Storage Service (S3), which provides storage through web service interfaces (REST, SOAP, and BitTorrent). In S3, the data is stored in the form of buckets. Buckets serve as root folders where we can add, create, or upload files and folders. We can create multiple buckets for different purposes, and each bucket can have different access control policies.
 
-To install Oracle VM VirtualBox, a free and open-source hosted hypervisor, on a computer system, enabling the creation and management of virtual machines for running multiple operating systems on a single host machine.
+## Objectives
+Create a Bucket in Amazon S3.
+Add Objects (files and folders) to the bucket.
+Access, move, download, and delete the objects.
+Delete the Bucket.
 
-## Specifications:
+### Step 1: Choose S3 Service
+Choose the S3 service from the list of services provided by AWS.
 
-1.Operating System: Windows, macOS, or Linux-based OS
-2.Processor: x86/AMD64-compatible CPU (Intel or AMD)
-3.RAM: Minimum 4 GB (8 GB or more recommended)
-4.Storage: Minimum 100 MB for the base application, plus additional space for each virtual machine (at least 20 GB free recommended)
-5.Graphics: Hardware virtualization support (Intel VT-x or AMD-V) is recommended for optimal performance
+### Step 2: Create a Unique Bucket
+After selecting the S3 service, click on the "Create Bucket" button on the page. The bucket name must be unique, contain no uppercase letters, and have no special characters. If you enter any of these, an error will display, preventing the bucket from being created.
 
-## Software Requirements:
 
-1.Internet connection to download the VirtualBox installer
-2.Optionally, Oracle VM VirtualBox Extension Pack for additional features
+For region selection, choose a region from the available list. It is recommended to select a region nearby your location for higher availability. In this lab, I selected Sydney, as it is near my country, New Zealand. Remember to provide a unique bucket name with no special characters or uppercase letters.
 
-## Procedure:
+### Step 3: Upload Files to the Bucket
+Now, I have uploaded some files into the bucket I just created. There are no restrictions on uploading file types, but the size of each file must be less than 5 terabytes.
 
-**Step 1: Download VirtualBox**
+You can upload files of any extension, folders, and subfolders. The images below explain that you can drag and drop files or select them from your computer. After uploading a file, you can download, cut, copy, make it public, rename, or delete it. Making a file public means everyone can access it, and you will receive a link (e.g., https://s3-ap-southeast-2.amazonaws.com/...) to share it.
 
-2.Go to the VirtualBox official website: VirtualBox Downloads
-3.Choose the appropriate version for your operating system:
-4.Windows hosts (for Windows users)
-5.macOS hosts (for Mac users)
-6Linux distributions (for Linux users)
+### Step 4: Upload a Folder
+You can also upload a folder to the bucket. If your local folder contains subfolders and data, all data inside the parent folder will be uploaded. The images below show how to upload a folder by dragging and dropping or browsing.
 
-**Step 2: Install VirtualBox (Windows/macOS)**
-
-**For Windows:**
-
-1.Open the downloaded installer (VirtualBox-x.x.x-xxxx-Win.exe).
-2.Follow the setup wizard:
-  Click Next.
-  Select the installation location (default is recommended).
-  Choose the components you want to install and click Next.
-  The installer may show a warning about network interfaces; allow it to proceed by clicking 
-  Yes.
-3.Click Install and allow the process to complete.
-
-**Step 3: Verify the Installation**
-
-1.Launch VirtualBox from the desktop or start menu.
-2.The VirtualBox Manager should open, showing options to create and manage virtual machines.
+### Step 5: Delete the Bucket
+To delete a bucket, you must retype the bucket name. This policy is implemented by Amazon to confirm your action because deleting a bucket can remove large amounts of data.
 
 ## Output:
+![image](https://github.com/user-attachments/assets/c6291ec2-d560-4d2d-b12a-b43eb389724a)
+![image](https://github.com/user-attachments/assets/7c28fb7b-6b2c-4d97-986c-fe3b2797a2f2)
+![image](https://github.com/user-attachments/assets/10ba6aa9-9c74-49dd-aedb-5468e3a6f8e5)
+![image](https://github.com/user-attachments/assets/79b05738-1be6-4fee-8ca8-31fb4813f791)
 
-![image](https://github.com/user-attachments/assets/d720b21b-89be-4ebe-8eae-0fc81a7ffe93)
+![image](https://github.com/user-attachments/assets/de26754d-24d0-4ce7-a027-72fe343e7375)
 
-## Result:
 
-Oracle VM VirtualBox has been successfully installed on the system, and the user can now create and run virtual machines using different operating systems.
+
+## Result
+Successfully created, managed, and deleted an S3 bucket on AWS, demonstrating the ability to upload, access, and control objects within Amazon S3.
